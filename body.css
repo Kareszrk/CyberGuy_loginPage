@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+.background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+}
+
+.background_protector {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.loginPage {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(94, 1, 145, 0.5);
+    color: white;
+    font-family: 'Suez One', serif;
+    padding: 20px;
+    min-width: 30%;
+    height: auto;
+    border: 3px solid rgb(94, 1, 145);
+    font-size: 25px;
+    animation-name: loginPage_anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 0px;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes loginPage_anim {
+    0% {
+        border-radius: 100px 0px 0px 0px;
+    }
+    25% {
+        border-radius: 0px 100px 0px 0px;
+    }
+    75% {
+        border-radius: 0px 0px 100px 0px;
+    }
+    100% {
+        border-radius: 0px 0px 0px 100px;
+    }
+}
+
+.spacebetween {
+    padding: 12px;
+}
+
+.inputField {
+    width: 100%;
+    background-color: rgba(94, 1, 145, 0.2);
+    border: 3px solid rgba(94, 1, 145);
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 12px;
+    background-color: rgba(94, 1, 145, 0.5);
+    color: white;
+    border: 3px solid rgb(94, 1, 145);
+}
+
+.btn:hover {
+    background-color: rgba(222, 173, 247, 0.5);
+    animation-name: loginPage_anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-radius: 0px;
+    animation-direction: alternate-reverse;
+}
+
+body {
+    background: black;
+}
